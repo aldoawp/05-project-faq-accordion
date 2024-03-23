@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'work-sans': ['Work Sans', 'sans-serif']
+          },
+          colors: {
+            "white": "hsl(0, 0%, 100%)",
+            "light-pink": "hsl(275, 100%, 97%)",
+            "grayish-purple": "hsl(292, 16%, 49%)",
+            "dark-purple": "hsl(292, 42%, 14%)"
+          }
+        }
+      }
+    }
+  </script>
+  <script src="script.js"></script>
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-work-sans h-screen w-screen flex justify-center items-center">
+  
+  <!-- Background Image -->
+  <div class="absolute w-full -z-10 w-screen h-screen bg-light-pink">
+    <img src="./assets/images/background-pattern-desktop.svg" alt="bagkcround pattern" class="absolute w-full">
+  </div>
+
+  <!-- Card Layout -->
+  <div class="flex flex-col w-1/2 h-auto bg-white rounded-xl shadow-lg py-6 px-4 min-w-80 max-w-[32rem]">
+    <!-- Upper Section -->
+      <div class="flex flex-row items-center gap-4 mb-6 px-4">
+        <img src="./assets/images/icon-star.svg" alt="woman online" class="w-6">
+        <h1 class="text-3xl font-bold text-dark-purple">FAQs</h1>
+      </div>
+      
+      <!-- FAQ Section -->
+      
+      <!-- FAQ 1 -->
+      <div class="group faq rounded-xl ease-in-out duration-200 hover:bg-light-pink  p-4 hover:cursor-pointer">
+        <div class="flex flex-row justify-between items-center gap-6">
+          <h2 class="text-sm font-bold text-dark-purple">What is Frontend Mentor?, and how will it help me?</h2>
+          <img src="./assets/images/icon-minus.svg" alt="minus icon" class="w-4 hidden">
+          <img src="./assets/images/icon-plus.svg" alt="plus icon" class="w-4">
+        </div>
+              
+        <p class="text-xs mt-4 hidden">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[0.5px] bg-zinc-200 my-2"></div>
+
+      <!-- FAQ 2 -->
+      <div class="faq rounded-xl ease-in-out duration-200 hover:bg-light-pink p-4 hover:cursor-pointer">
+        <div class="flex flex-row justify-between items-center gap-6">
+          <h2 class="text-sm font-bold text-dark-purple">Is Frontend Mentor free?</h2>
+          <img src="./assets/images/icon-minus.svg" alt="minus icon" class="w-4 hidden">
+          <img src="./assets/images/icon-plus.svg" alt="plus icon" class="w-4">
+        </div>
+              
+        <p class="text-xs hidden mt-4"> Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[0.5px] bg-zinc-200 my-2"></div>
+
+      <!-- FAQ 3 -->
+      <div class="faq rounded-xl ease-in-out duration-200 hover:bg-light-pink p-4 hover:cursor-pointer">
+        <div class="flex flex-row justify-between items-center gap-6">
+          <h2 class="text-sm font-bold text-dark-purple">Is Frontend Mentor free?</h2>
+          <img src="./assets/images/icon-minus.svg" alt="minus icon" class="w-4 hidden">
+          <img src="./assets/images/icon-plus.svg" alt="plus icon" class="w-4">
+        </div>
+              
+        <p class="text-xs hidden mt-4"> Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="w-full h-[0.5px] bg-zinc-200 my-2"></div>
+      
+      <!-- FAQ 4 -->
+      <div class="faq rounded-xl ease-in-out duration-200 hover:bg-light-pink p-4 hover:cursor-pointer">
+        <div class="flex flex-row justify-between items-center gap-6">
+          <h2 class="text-sm font-bold text-dark-purple">Is Frontend Mentor free?</h2>
+          <img src="./assets/images/icon-minus.svg" alt="minus icon" class="w-4 hidden">
+          <img src="./assets/images/icon-plus.svg" alt="plus icon" class="w-4">
+        </div>
+              
+        <p class="text-xs hidden mt-4"> Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+      </div>
+      
+  </div>
+</body>
+</html>
